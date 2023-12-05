@@ -1,0 +1,39 @@
+{
+    "product": "D500",
+    "device": "D500",
+    "board": "D500",
+    "brand": "Blu",
+    "model": "D500",
+    "wifi_ssid": "TP-LINK_QDW3UU",
+    "android_id": "QP1A.190711.020.C3",
+    "boot_id": "81cbeafa-f524-b7d9-44ba-116c226cb8aa",
+    "proc_version": "Linux version 4.1.75-wD8uR1uQ (android-build@524b7d944ba1.source.android.com)",
+    "mac_address": "81:CB:EA:FA:F5:24",
+    "ip_address": [
+        188,
+        130,
+        48,
+        159
+    ],
+    "imei": "409575521283646",
+    "incremental": "3913146498",
+    "protocol": 2,
+    "display": "QP1A.190711.020.C3",
+    "finger_print": "Blu/D500/D500:10/QP1A.190711.020.C3/3913146498:user/release-keys",
+    "baseband": "",
+    "sim": "T-Mobile",
+    "sim_info": "T-Mobile",
+    "os_type": "android",
+    "bootloader": "U-boot",
+    "wifi_bssid": "81:CB:EA:FA:F5:24",
+    "apn": "wifi",
+    "version": {
+        "incremental": "3913146498",
+        "release": "10",
+        "codename": "REL",
+        "sdk": 29
+    },
+    "imsi_md5": "856da9f1025a6497ddbe555a0fcce8bc",
+    "vendor_name": "Blu",
+    "vendor_os_name": "android"
+}
