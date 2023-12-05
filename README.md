@@ -1,5 +1,6 @@
 # Get-beastsaber-score
-### (Use tencentQQ to)make a picture about your scoresaber rank and pp
+### （通过QQ机器人）生成节奏光剑社区成绩图
+### (Use tencentQQ BOT to)make a picture about your scoresaber rank and pp
 
 
 # Usage
