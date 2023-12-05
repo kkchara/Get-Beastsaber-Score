@@ -9,7 +9,7 @@ import asyncio
 import aiohttp
 
 
-def get_json(acc, up="plug/plugins/beatsaber/"):
+def get_json(acc, up="get-beastsaber-score/plugins/beatsaber/"):
     warnings.filterwarnings("ignore")
     page = 1
     header = {
@@ -45,7 +45,7 @@ def get_json(acc, up="plug/plugins/beatsaber/"):
 #             return await response.text()
 #
 #
-# async def as_get_json(acc, up="plug/plugins/beatsaber/"):
+# async def as_get_json(acc, up="get-beastsaber-score/plugins/beatsaber/"):
 #     page = 1
 #     header = {
 #         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0",
@@ -75,7 +75,7 @@ def get_json(acc, up="plug/plugins/beatsaber/"):
 #         f.write(full_data)
 
 
-def get_avatar(scc, up="plug/plugins/beatsaber/"):
+def get_avatar(scc, up="get-beastsaber-score/plugins/beatsaber/"):
     warnings.filterwarnings("ignore")
     avatar_info = requests.get(f'https://cdn.scoresaber.com/avatars/{scc}.jpg', verify=False)
     with open(f"{up}data/img/avatar.jpg", "wb") as f:
@@ -85,7 +85,7 @@ def get_avatar(scc, up="plug/plugins/beatsaber/"):
     resized_image.save(f"{up}data/img/avatar.jpg")
 
 
-def get_hash(up="plug/plugins/beatsaber/"):
+def get_hash(up="get-beastsaber-score/plugins/beatsaber/"):
     hash_list = []
     for i in range(1, 5):
         with open(f"{up}data/info/page{i}.json", "r", encoding="utf-8") as f:
@@ -96,7 +96,7 @@ def get_hash(up="plug/plugins/beatsaber/"):
     return hash_list
 
 
-def get_cover(hash_list, up="plug/plugins/beatsaber/"):
+def get_cover(hash_list, up="get-beastsaber-score/plugins/beatsaber/"):
     warnings.filterwarnings("ignore")
     for h in hash_list:
         if os.path.exists(f"{up}/data/info/cover/{h}.png"):
@@ -113,7 +113,7 @@ def get_cover(hash_list, up="plug/plugins/beatsaber/"):
     # 保存头像和歌曲封面(名称为hash)到文件夹，保存昵称，pp，国家排名和前24首最佳和前6首最近的（key/hash）与难度到json)
 
 
-def get_key(hash_list: list, up="plug/plugins/beatsaber/"):
+def get_key(hash_list: list, up="get-beastsaber-score/plugins/beatsaber/"):
     warnings.filterwarnings("ignore")
     f = open(f"{up}/data/info/hash_key.json", "r", encoding="utf-8")
     hash_data = json.load(f)

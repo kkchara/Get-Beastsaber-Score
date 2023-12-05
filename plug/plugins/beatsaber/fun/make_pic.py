@@ -4,7 +4,7 @@ import json
 import re
 
 
-def make_pic(account, up="plug/plugins/beatsaber/"):
+def make_pic(account, up="get-beastsaber-score/plugins/beatsaber/"):
     # 账户
     acc = str(account)
 

@@ -41,7 +41,7 @@ async def get_ss(bot: Bot, event: Event):
             # 生成图片
             make_pic.make_pic(acc)
             # 图片位置
-            with open(f"plug/plugins/beatsaber/data/img/score.png", "rb") as pic:
+            with open(f"get-beastsaber-score/plugins/beatsaber/data/img/score.png", "rb") as pic:
                 img = pic.read()
             # 发送图片
             await ss_matcher.finish(MessageSegment.image(img))
@@ -58,14 +58,14 @@ async def set_ss(bot: Bot, event: Event, args: Message = CommandArg()):
         "Cookie": "connect.sid=s%3AqYAU3jtpRZMGaeGQ0krE6abunAuDB8Nt.jzGieagN8PqokqeRpnHgYlwI5SUW7MwObk%2BSNlLCASA"}
     res = requests.get(f'https://scoresaber.com/api/player/{acc}/scores?page=1&sort=top', headers=header)
     if res.status_code == 200:
-        f = open(r'plug/plugins/beatsaber/data/account/account.json', 'r')
+        f = open(r'get-beastsaber-score/plugins/beatsaber/data/account/account.json', 'r')
         params = json.load(f)
         f.close()
         if qq_num in params:
             await set_acc_matcher.finish(Message(f"你已经绑定了{params[qq_num]}为你的账号"))
         else:
             params[qq_num] = acc
-            with open(r'plug/plugins/beatsaber/data/account/account.json', 'w') as f:
+            with open(r'get-beastsaber-score/plugins/beatsaber/data/account/account.json', 'w') as f:
                 json.dump(params, f)
             await set_acc_matcher.finish(Message("绑定成功!"))
     else:
