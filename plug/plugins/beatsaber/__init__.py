@@ -23,7 +23,7 @@ async def get_ss(bot: Bot, event: Event):
     qq_num = str(event.get_user_id())
     acc = ""
     # 获得账号
-    with open(r'plug\plugins\beatsaber\data\account\account.json', 'r') as f:
+    with open(r'get-beastsaber-score\plugins\beatsaber\data\account\account.json', 'r') as f:
         params = json.load(f)
         if qq_num in params:
             acc = params[qq_num]
