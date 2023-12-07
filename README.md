@@ -9,13 +9,13 @@
 
   1.make sure your Python >= 3.8, then:
 
-  1.5. RENAME THE FLODER AS "PLug"
-
   2.clone this repository
 
-  3.type `pip install nb-cli` and `pip install pillow` in terminal and Enter
+  3. RENAME THE FLODER AS "PLug"
 
-  4.run the bot, for more usage about nonebot, please click the link above
+  4.type `pip install nb-cli` and `pip install pillow` in terminal and Enter
+
+  5.run the bot, for more usage about nonebot, please click the link above
 
 
 ### Direct use:
