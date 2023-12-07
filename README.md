@@ -11,7 +11,7 @@
 
   2.clone this repository
 
-  3. RENAME THE FLODER AS "PLug"
+  ⭐ 3. RENAME THE FLODER AS "PLug"⭐
 
   4.type `pip install nb-cli` and `pip install pillow` in terminal and Enter
 
