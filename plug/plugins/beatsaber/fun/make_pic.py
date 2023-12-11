@@ -173,8 +173,7 @@ def make_pic(account, up="get-beastsaber-score/plugins/beatsaber/"):
         x_start_weight += block_weight + between_w
 
     image.save(rf'{up}data/img/score.png')
-    if __name__ == '__main__':
-        image.show()
+    image.show()
 
 
 if __name__ == '__main__':
