@@ -22,7 +22,7 @@
 
   make sure your Python >= 3.8
 
-  just clone and run the *"\_\_init\_\_.py"*  in ***the "beatsaber" folder***
+  just clone and run the *"main.py"*  in ***the "fun" folder***
 
 
 # Futrue feature
