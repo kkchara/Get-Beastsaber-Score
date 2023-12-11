@@ -1,5 +1,6 @@
 # Get-beastsaber-score
-### (Use tencentQQ to)make a picture about your scoresaber rank and pp
+### （通过QQ机器人）生成节奏光剑社区成绩图
+### (Use tencentQQ BOT to)make a picture about your scoresaber rank and pp
 
 
 # Usage
@@ -10,9 +11,11 @@
 
   2.clone this repository
 
-  3.type `pip install nb-cli` and `pip install pillow` in terminal and Enter
+  ⭐ 3. RENAME THE FLODER AS "PLug"⭐
 
-  4.run the bot, for more usage about nonebot, please click the link above
+  4.type `pip install nb-cli` and `pip install pillow` in terminal and Enter
+
+  5.run the bot, for more usage about nonebot, please click the link above
 
 
 ### Direct use:
